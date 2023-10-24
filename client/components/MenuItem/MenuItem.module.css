@@ -1,0 +1,25 @@
+.item {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 6px;
+}
+
+.item:hover {
+	background-color: var(--background-highlight)
+}
+
+.picture {
+	width: 48px;
+	height: 48px;
+	border-radius: 4px;
+}
+.row {
+
+}
+.name {
+	color: #fff;
+}
+.artist {}

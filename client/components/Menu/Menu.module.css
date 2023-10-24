@@ -1,0 +1,79 @@
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	height: 100%;
+	width: 420px;
+}
+
+.menu__top,
+.menu__bot {
+	background-color: var(--background-base);
+	border-radius: 8px;
+	padding: 8px 12px;
+}
+
+.menu__bot {
+	flex-grow: 1;
+}
+
+.menu__items {
+	display: flex;
+	flex-direction: column;
+}
+
+.menu__row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu__btn {
+	padding: 4px 12px;
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.menu__link {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	width: 100%;
+	height: 40px;
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+	user-select: none;
+}
+
+/* .menu__link button {
+	mr
+} */
+
+.menu__link:hover {
+	color: #fff;
+}
+
+.menu__btn:hover button svg use {
+	fill: #fff;
+}
+
+.menu__empty {
+	font-size: 18px;
+	text-align: center;
+}
+
+.menu__signIn {
+	display: block;
+	text-align: center;
+	max-width: 100px;
+	margin: 0 auto;
+	align-self: center;
+	background-color: #fff;
+	text-decoration: none;
+	color: var(--background-base);
+	padding: 8px 20px;
+	border-radius: 30px;
+}
+

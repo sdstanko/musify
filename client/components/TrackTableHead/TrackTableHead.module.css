@@ -1,0 +1,24 @@
+.head__row {
+    display: grid;
+    grid-gap: 16px;
+    padding: 0 16px;
+    margin-bottom: 16px;
+    grid-template-columns: [index] 16px [first] 4fr [last] minmax(120px, 1fr);
+    font-size: 16px;
+    border-bottom: 1px solid hsla(0,0%,100%,.1);;
+    height: 36px;
+}
+
+.head__row_album {
+    grid-template-columns: [index] 16px [first] 4fr [var1] 2fr [last] minmax(120px,1fr);
+}
+
+.head__symbol {
+    display: flex;
+    align-items: center;
+}
+
+.head__clock {
+    display: flex;
+    justify-content: center;
+}

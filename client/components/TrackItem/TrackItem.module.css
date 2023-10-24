@@ -1,0 +1,66 @@
+.item {
+    grid-template-columns: [index] 16px [first] 4fr [last] minmax(120px, 1fr);
+    grid-gap: 16px;
+    display: grid;
+    padding: 0 16px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    height: 56px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.item_album {
+    grid-template-columns: [index] 16px [first] 4fr [var1] 2fr [last] minmax(120px, 1fr);
+}
+
+.item:hover {
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.item:hover .item__index {
+    color: #fff;
+}
+
+.item:hover .item__text {
+    color: #fff;
+}
+
+.item__track {
+    display: flex;
+    align-items: center;
+}
+
+.item__cover {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.item__name {
+    color: var(--text-base);
+}
+
+.item__album {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: inherit;
+}
+
+.item__album:hover {
+	text-decoration: underline;
+}
+
+.item__index,
+.item__length {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item__artist,
+.item__length {
+    font-size: 14px;
+}

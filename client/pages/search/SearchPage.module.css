@@ -1,0 +1,27 @@
+.search {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.search__input {
+	width: 100%;
+	margin: 30px 0;
+	text-align: center;
+	background-color: transparent;
+	border: none;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #b3b3b3;
+	color: inherit;
+	font-size: 40px;
+	outline: none;
+}
+
+.search__empty {
+	text-align: center;
+	font-size: 22px;
+}
+
+.search__body {
+	overflow-y: auto;
+}

@@ -1,0 +1,36 @@
+.home {
+    grid-area: main-view/main-view/main-view/right-sidebar;
+    padding: 16px 16px 0 16px;
+    overflow: hidden;
+}
+
+.home__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.home__title,
+.home__subtitle {
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.home__random {
+    grid-gap: 8px 8px;
+    display: grid;
+    grid-template: auto/repeat(auto-fill, minmax(max(240px, 25%), 1fr));
+    margin-bottom: 16px;
+}
+
+.home__grid {
+    --column-count: 4;
+    --grid-gap: 24px;
+    --min-container-width: 372px;
+    grid-gap: var(--grid-gap);
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+    min-width: var(--min-container-width);
+}

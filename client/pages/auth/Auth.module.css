@@ -1,0 +1,99 @@
+.auth {
+    background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 100%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth__inner {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 32px 0px;
+    max-width: 734px;
+    width: 100%;
+}
+
+.auth__title {
+    text-align: center;
+    margin: 48px 0px;
+    font-size: 48px;
+}
+
+.auth__form {
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+    margin: 0 auto;
+}
+
+.auth__row {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth__label {
+    padding-bottom: 8px;
+}
+
+.auth__field {
+    appearance: none;
+    border: 0px;
+    padding: 8px 14px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    transition: box-shadow 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
+    border-radius: 4px;
+    background-color: var(--background-base, #ffffff);
+    box-shadow: inset 0 0 0 1px var(--essential-subdued, #878787);
+    color: var(--text-base, #000000);
+}
+
+.auth__field::placeholder {
+    color: var(--text-subdued, #6a6a6a);
+}
+
+.auth__field:focus {
+    outline: 0px;
+    box-shadow: inset 0 0 0 3px var(--essential-base, #000000);
+}
+
+.auth__btn {
+    font-weight: 700;
+    background-color: var(--text-bright-accent);
+    padding: 8px 32px;
+    border: 0px;
+    border-radius: 500px;
+    margin-bottom: 15px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    touch-action: manipulation;
+    transition-duration: 33ms;
+    transition-property: background-color, border-color, color, box-shadow, filter, transform;
+    user-select: none;
+    cursor: pointer;
+}
+
+.auth__error {
+    position: absolute;
+    right: 0;
+    color: var(--text-negative);
+}
+
+.auth__option {
+    text-align: center;
+}
+
+.auth__text {
+    margin-right: 10px;
+    color: var(--text-subdued);
+}
+
+.auth__link {
+    color: #fff;
+}

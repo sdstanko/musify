@@ -1,0 +1,31 @@
+@import url('./vars.css');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: var(--background-base);
+}
+
+body {
+    color: #b3b3b3;
+    line-height: 1.6;
+}
+
+html,
+body,
+#__next {
+    height: 100%;
+    /* overflow-x: hidden; */
+}
+
+#__next {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--circularSp-font);
+}

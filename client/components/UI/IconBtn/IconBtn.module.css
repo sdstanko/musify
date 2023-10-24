@@ -1,0 +1,20 @@
+.button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    fill: var(--text-subdued);
+    display: block;
+}
+
+.icon:hover {
+    fill: #fff;
+}
+

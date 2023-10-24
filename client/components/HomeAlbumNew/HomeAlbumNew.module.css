@@ -1,0 +1,66 @@
+.item {
+    background: #181818;
+    border-radius: 8px;
+    flex: 1;
+    isolation: isolate;
+    padding: 16px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    cursor: pointer;
+}
+
+.item:hover {
+	background: #282828;
+}
+
+.item:hover .item__btn button {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.item__top {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.item__cover {
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    padding-bottom: 100%;
+    width: 100%;
+}
+
+.item__img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.item__btn {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+
+.item__btn button {
+	transform: translateY(8px);
+}
+
+.item__name {
+    margin-bottom: 4px;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.item__artist {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
