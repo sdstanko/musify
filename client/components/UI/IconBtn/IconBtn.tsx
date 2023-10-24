@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styles from './IconBtn.module.css';
-const url = '/icons.svg';
+const url = '/musify/icons.svg';
 
 interface IconBtnProps {
     icon: string;
