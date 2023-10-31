@@ -16,19 +16,19 @@ const Menu = () => {
         <nav className={styles.menu}>
             <ul className={styles.menu__top}>
                 <li className={styles.menu__btn}>
-                    <Link href="/" className={styles.menu__link}>
+                    <Link href="/musify" className={styles.menu__link}>
                         <IconBtn icon="home" width={24} height={24} />
                         Main
                     </Link>
                 </li>
                 <li className={styles.menu__btn}>
-                    <Link href="/search" className={styles.menu__link}>
+                    <Link href="/musify/search" className={styles.menu__link}>
                         <IconBtn icon="search" width={24} height={24} />
                         Search
                     </Link>
                 </li>
                 <li className={styles.menu__btn}>
-                    <Link href="/upload" className={styles.menu__link}>
+                    <Link href="/musify/upload" className={styles.menu__link}>
                         <IconBtn icon="create" width={24} height={24} />
                         Upload
                     </Link>

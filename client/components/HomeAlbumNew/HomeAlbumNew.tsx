@@ -12,7 +12,7 @@ const HomeAlbumNew: FC<IHomeAlbumProps> = ({ album }) => {
     const router = useRouter()
 
     return (
-        <div className={styles.item} onClick={() => router.push(`album/${album._id}`)}>
+        <div className={styles.item} onClick={() => router.push(`/musify/album/${album._id}`)}>
             <div className={styles.item__top}>
                 <div className={styles.item__cover}>
                     <img

@@ -12,7 +12,7 @@ const HomeAlbumRandom: FC<IHomeAlbumRandomProps> = ({ album }) => {
     const router = useRouter();
 
     return (
-        <div className={styles.item} onClick={() => router.push(`/album/${album._id}`)}>
+        <div className={styles.item} onClick={() => router.push(`/musify/album/${album._id}`)}>
             <div className={styles.item__cover}>
                 <img
                     className={styles.item__img}
