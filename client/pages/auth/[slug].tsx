@@ -30,6 +30,10 @@ const Auth: FC = () => {
     const [login] = useLoginMutation();
 
     useEffect(() => {
+        console.log(router)
+    }, [])
+
+    useEffect(() => {
         if (action === 'signin') {
             setIsSignInValue(true);
         } else {

@@ -28,6 +28,10 @@ const AlbumPage: FC = () => {
     const [libraryToggle] = useLibraryToggleMutation();
 
     useEffect(() => {
+        console.log(router);
+    }, []);
+
+    useEffect(() => {
         if (!Array.isArray(id) && id) {
             setIsInLibrary(user.library.includes(id));
         }
