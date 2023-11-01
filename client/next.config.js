@@ -3,7 +3,7 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-
+  basePath: '/musify'
 };
 
 module.exports = nextConfig;
