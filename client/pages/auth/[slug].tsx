@@ -30,8 +30,8 @@ const Auth: FC = () => {
     const [login] = useLoginMutation();
 
     useEffect(() => {
-        console.log(router)
     }, [])
+    console.log(router)
 
     useEffect(() => {
         if (action === 'signin') {
