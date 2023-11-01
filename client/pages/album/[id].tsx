@@ -20,20 +20,17 @@ const AlbumPage: FC = () => {
     const router = useRouter();
     const [isInLibrary, setIsInLibrary] = useState(false);
     const [id, setId] = useState('')
-    // const id = '653768818eb22bc7bf309fbc'
     const { data: album, isSuccess } = useGetOneAlbumQuery(id, { skip: !id });
     const { data: track } = useGetOneTrackQuery(album?.tracks[0], {
         skip: !isSuccess,
     });
     const [libraryToggle] = useLibraryToggleMutation();
 
-    console.log(router);
     useEffect(() => {
         if (router.asPath.startsWith('/musify')) {
             const parts = router.asPath.split('/');
             setId(parts[parts.length - 1])
         }
-        console.log(router);
     }, [router.asPath]);
 
     useEffect(() => {
