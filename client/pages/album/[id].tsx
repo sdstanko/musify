@@ -20,7 +20,7 @@ const AlbumPage: FC = () => {
     const router = useRouter();
     const [isInLibrary, setIsInLibrary] = useState(false);
 
-    const id = router.query.id;
+    const id = '653768818eb22bc7bf309fbc'
     const { data: album, isSuccess } = useGetOneAlbumQuery(id, { skip: !id });
     const { data: track } = useGetOneTrackQuery(album?.tracks[0], {
         skip: !isSuccess,
