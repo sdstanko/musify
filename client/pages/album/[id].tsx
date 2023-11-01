@@ -28,7 +28,6 @@ const AlbumPage: FC = () => {
     const [libraryToggle] = useLibraryToggleMutation();
 
     console.log(router);
-    
     useEffect(() => {
         console.log(router);
     }, [router.query]);
