@@ -37,7 +37,7 @@ const Menu = () => {
             <div className={styles.menu__bot}>
                 <div className={styles.menu__row}>
                     <div className={styles.menu__btn}>
-                        <a className={styles.menu__link} href="http://">
+                        <a className={styles.menu__link}>
                             <IconBtn icon="library" width={24} height={24} />
                             Library
                         </a>

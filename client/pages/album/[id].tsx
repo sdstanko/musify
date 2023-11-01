@@ -27,9 +27,7 @@ const AlbumPage: FC = () => {
     });
     const [libraryToggle] = useLibraryToggleMutation();
 
-    useEffect(() => {
-        console.log(router);
-    }, []);
+    console.log(router);
 
     useEffect(() => {
         if (!Array.isArray(id) && id) {
