@@ -28,7 +28,7 @@ const Menu = () => {
                     </Link>
                 </li>
                 <li className={styles.menu__btn}>
-                    <Link href="/upload" className={styles.menu__link}>
+                    <Link href="/musify/upload" className={styles.menu__link}>
                         <IconBtn icon="create" width={24} height={24} />
                         Upload
                     </Link>
@@ -55,7 +55,7 @@ const Menu = () => {
                     </div>
                 ) : (
                     <div>
-                        <Link href="/auth/signin" className={styles.menu__signIn}>
+                        <Link href="/musify/auth/signin" className={styles.menu__signIn}>
                             Sign In
                         </Link>
                     </div>

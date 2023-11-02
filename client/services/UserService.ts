@@ -1,4 +1,4 @@
-import { AuthValues } from '@/pages/auth/[slug]';
+import { AuthValues } from '@/pages/musify/auth/[slug]';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { HYDRATE } from 'next-redux-wrapper';
 
