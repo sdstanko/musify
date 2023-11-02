@@ -6,10 +6,7 @@ const nextConfig = {
   },
   // basePath: '/musify'
 
-  generateBuildId: async () => {
-    // You can, for example, get the latest git commit hash here
-    return 'musify'
-  },
+
 };
 
 module.exports = nextConfig;
