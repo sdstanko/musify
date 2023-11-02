@@ -11,6 +11,18 @@ const nextConfig = {
         source: '/musify/auth/:action',
         destination: '/auth/:action',
       },
+      {
+        source: '/musify',
+        destination: '/',
+      },
+      {
+        source: '/musify/upload',
+        destination: '/upload',
+      },
+      {
+        source: '/musify/search',
+        destination: '/search',
+      },
     ]
   },
 };
