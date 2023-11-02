@@ -22,7 +22,7 @@
     "formik": "^2.4.5",
     "jwt-decode": "^3.1.2",
     "mini-css-extract-plugin": "^2.7.6",
-    "next": "13.4.19",
+    "next": "^13.3.4",
     "next-nginx-routes": "^1.1.1",
     "next-redux-wrapper": "^8.1.0",
     "react": "18.2.0",

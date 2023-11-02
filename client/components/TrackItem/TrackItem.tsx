@@ -64,7 +64,7 @@ const TrackItem: FC<ITrackItemProps> = ({ id, index, isSearch }) => {
                     </div>
                     {isSearch && (
                         <Link
-                            href={`https://danijel.pro/musify/api/${album._id}`}
+                            href={`https://danijel.pro/musify/album/${album._id}`}
                             className={styles.item__album}
                         >
                             {album.name}
