@@ -28,7 +28,7 @@ const Menu = () => {
                     </Link>
                 </li>
                 <li className={styles.menu__btn}>
-                    <Link href="/musify/upload" className={styles.menu__link}>
+                    <Link href="/upload" className={styles.menu__link}>
                         <IconBtn icon="create" width={24} height={24} />
                         Upload
                     </Link>
