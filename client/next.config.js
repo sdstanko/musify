@@ -6,6 +6,10 @@ const nextConfig = {
         source: '/musify/album/:id',
         destination: '/album/:id',
       },
+      {
+        source: '/musify/auth/:action',
+        destination: '/auth/:action',
+      },
     ]
   },
 };
