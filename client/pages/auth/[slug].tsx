@@ -9,7 +9,7 @@ import styles from './Auth.module.css';
 import { useCreateUserMutation } from '@/services/UserService';
 import { useLoginMutation } from '@/services/AuthService';
 import { setUser } from '@/store/user/userSlice';
-import AuthSchemaConstructor from '../../../formSchemas/AuthSchemaConstructor';
+import AuthSchemaConstructor from '../../formSchemas/AuthSchemaConstructor';
 import { ITokenData } from '@/types/tokenData';
 import { IUser } from '@/types/user';
 
