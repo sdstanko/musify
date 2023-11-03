@@ -4,19 +4,14 @@ import { Range } from 'react-range';
 import { useDispatch } from 'react-redux';
 import IconBtn from '../UI/IconBtn/IconBtn';
 import styles from './Player.module.css';
-import {
-    setIsShuffle,
-    setIsRepeat,
-    setVolume,
-} from '../../store/player/playerSlice';
+import { setIsShuffle, setIsRepeat, setVolume } from '../../store/player/playerSlice';
 import { formatTime } from '@/utils/formatTime';
 import { useGetOneAlbumQuery } from '@/services/AlbumService';
 import { useGetOneTrackQuery } from '@/services/TrackService';
 import { PlayerActions } from '@/utils/playerActions';
 
-
+let audio: HTMLAudioElement;
 const Player: FC = () => {
-    const audio = useRef<HTMLAudioElement>(null)
     const [nextTrackId, setNextTrackId] = useState('');
     const [prevTrackId, setPrevTrackId] = useState('');
     const [currentTrackIndex, setCurrentTrackIndex] = useState<number | null>(null);
@@ -42,7 +37,7 @@ const Player: FC = () => {
         album,
         volume,
         isPlaying,
-        audio.current!,
+        audio,
         currentTime,
         duration,
         isRepeat,
@@ -55,8 +50,16 @@ const Player: FC = () => {
     );
 
     useEffect(() => {
-        playerActions.activeWatcher();
-        playerActions.setCurrentTrackIndexHandler();
+        if (!audio) {
+            audio = new Audio();
+        }
+    }, []);
+
+    useEffect(() => {
+        if (active) {
+            playerActions.activeWatcher();
+            playerActions.setCurrentTrackIndexHandler();
+        }
     }, [active, album]);
 
     useEffect(() => {
@@ -75,7 +78,6 @@ const Player: FC = () => {
 
     return (
         <footer className={styles.player}>
-            <audio ref={audio} />
             <div className={styles.player__playing}>
                 {active && (
                     <>

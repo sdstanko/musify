@@ -62,18 +62,14 @@ export class PlayerActions {
     }
 
     activeWatcher = () => {
-        console.log(this.audio);
-        if (!this.audio) {
-            this.audio = new Audio();
-        } else {
-            if (this.currentTime != 0) return;
-            this.setAudio();
-            this.dispatch(setPlaybackBarValue(0));
-            if (!this.isPlaying) {
-                this.playToggle();
-            }
-            this.audio.play();
+        if (this.currentTime != 0) return;
+        this.setAudio();
+        this.dispatch(setPlaybackBarValue(0));
+
+        if (!this.isPlaying) {
+            this.playToggle();
         }
+        this.audio.play();
     };
 
     playToggle() {
@@ -110,7 +106,7 @@ export class PlayerActions {
         if (this.album && this.active) {
             this.setCurrentTrackIndex(this.album.tracks.indexOf(this.active._id));
         }
-    }
+    };
 
     setNextTrackIdHandler = () => {
         if (this.isShuffle && this.active) {
