@@ -16,7 +16,6 @@ const SearchPage = () => {
         }
     }, [query]);
 
-    console.log(tracks);
     return (
         <MainLayout>
             <div className={styles.search}>

@@ -4,7 +4,7 @@ const url = '/musify/icons.svg';
 
 interface PlayBtnProps {
 	size: number;
-    onClick?: () => void;
+    onClick?: (e: React.MouseEvent) => void;
 }
 
 const PlayBtn: FC<PlayBtnProps> = ({ size, onClick }) => {

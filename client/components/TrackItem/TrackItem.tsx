@@ -37,7 +37,10 @@ const TrackItem: FC<ITrackItemProps> = ({ id, index, isSearch }) => {
         }
     }, [isSuccessTrack]);
 
-    const play = () => {
+    const play = (e: React.MouseEvent) => {
+        if (e.target instanceof HTMLAnchorElement) {
+            return
+        }
         dispatch(setActive({ ...track, picture: album.picture }));
     };
 
@@ -46,7 +49,7 @@ const TrackItem: FC<ITrackItemProps> = ({ id, index, isSearch }) => {
             {isSuccessTrack && isSuccessAlbum && (
                 <div
                     className={isSearch ? [styles.item, styles.item_album].join(' ') : styles.item}
-                    onClick={play}
+                    onClick={(e) => play(e)}
                 >
                     <div className={styles.item__index}>{index + 1}</div>
                     <div className={styles.item__track}>
